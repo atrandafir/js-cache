@@ -1,3 +1,8 @@
+// https://github.com/atrandafir/js-cache/blob/main/README.md
+
+/**
+ * Class to manage local javascript cache to local storage.
+ */
 var jsCache = new function () {
 
 	this.enableLogging = false;
