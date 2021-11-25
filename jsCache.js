@@ -82,5 +82,3 @@ var jsCache = new function () {
     log_if_enabled(msg,'jsCache');
   };
 };
-// restoring from local cache
-jsCache.restoreFromLocalStorage();
