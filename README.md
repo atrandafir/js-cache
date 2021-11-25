@@ -1,4 +1,5 @@
-# js-cache
+# js-cache  
+
 A javascript cache component for localstorage
 
 # First load the script
@@ -27,3 +28,7 @@ if (achievements !== null) {
   jsCache.set('achievements', achievements, 10);
 }
 ```
+
+# Credits
+
+Inspired by https://www.yiiframework.com/doc/api/1.1/CCache
