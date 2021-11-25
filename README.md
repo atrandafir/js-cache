@@ -19,12 +19,11 @@ jsCache.restoreFromLocalStorage();
 var achievements=jsCache.get('achievements', null);
 
 if (achievements !== null) {
-  // means you got the data, so you can just return
-	return;
+  // means you got the data, so you can just do whatever you need to do
 } else {
   // if no data, then load it, example, from an API call
-  var response=await apiCall('/some/api');
+  achievements=await apiCall('/some/api');
   // save the data into the cache for the next time, and also set the expiration time
-  jsCache.set('achievements', response, 10);
+  jsCache.set('achievements', achievements, 10);
 }
 ```
